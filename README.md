@@ -18,12 +18,12 @@ This project uses OpenAI's GPT-4 to analyze academic performance patterns, board
 
 ## 📥 Input Variables
 
-- `COMSAE`: Practice board exam score (numeric)
-- `COMLEX`: Official board exam result (`P` = Pass, `F` = Fail)
-- `DOxxx`: Course grades (e.g., `DO139B`, `DO239`) on a 0–100 scale
-- `TotalCourse_M1` / `TotalCourse_M2`: Average numeric grades per year
-- `Year`: Expected graduation class (e.g., 2025)
-- Demographics or other features as needed
+- `COMSAE`: Practice board exam score (numeric)  
+- `COMLEX`: Official board exam result (`P` = Pass, `F` = Fail)  
+- `DOxxx`: Course grades (e.g., `DO139B`, `DO239`) on a 0–100 scale  
+- `TotalCourse_M1` / `TotalCourse_M2`: Average numeric grades per year  
+- `Year`: Expected graduation class (e.g., 2025)  
+- Demographics or other features as needed  
 
 ---
 
@@ -31,10 +31,10 @@ This project uses OpenAI's GPT-4 to analyze academic performance patterns, board
 
 The following logic is passed to GPT-4 via the OpenAI API:
 
-- Analyze correlations between course performance and COMLEX failure
-- Identify early signs of risk from M1 and M2 grades
-- Model COMLEX outcome as a binary variable and apply logistic regression
-- Return feedback with statistical rationale, structured into bullet points or short analytical paragraphs
+- Analyze correlations between course performance and COMLEX failure  
+- Identify early signs of risk from M1 and M2 grades  
+- Model COMLEX outcome as a binary variable and apply logistic regression  
+- Return feedback with statistical rationale, structured into bullet points or short analytical paragraphs  
 
 ---
 
@@ -54,7 +54,7 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": f"""
+            "content": f\"\"\"
 Please analyze the following student performance data:
 
 **Column Definitions:**
@@ -69,12 +69,13 @@ Please analyze the following student performance data:
 3. Logistic regression using COMLEX outcome
 4. Early warning signs
 5. Intervention suggestions
-"""
+\"\"\"
         }
     ]
 )
 
 print(response.choices[0].message.content)
+
 
 ---
 
@@ -90,8 +91,10 @@ print(response.choices[0].message.content)
 
 ## 📂 Files Included
 
-- `performance_analysis_gpt4.py` – Jupyter Notebook
-  
+- `performance_analysis_gpt4.py` – Jupyter Notebook or Python Script  
+- `student_data.csv` – Sample structured input data  
+- `README.md` – Project documentation  
+
 ---
 
 ## 🔗 Related Projects
@@ -107,10 +110,3 @@ print(response.choices[0].message.content)
 Executive Director of Admissions  
 📧 danatallent@yahoo.com  
 🔗 [LinkedIn](https://linkedin.com/in/dana-tallent-brooks-a15977a0)
-
----
-
-## 📄 License
-
-This project is for **academic demonstration and non-commercial use only**.  
-Please contact the author for reuse, publication, or deployment permissions.
