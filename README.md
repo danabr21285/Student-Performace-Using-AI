@@ -76,7 +76,7 @@ Please analyze the following student performance data:
 
 print(response.choices[0].message.content)
 
--
+---
 
 ## 📌 Sample Insights (AI-Generated)
 
@@ -86,7 +86,7 @@ print(response.choices[0].message.content)
 - Recommended **targeted tutoring** and **academic coaching** for students scoring < 72  
 - **COMSAE scores < 400** frequently preceded COMLEX failure  
 
--
+---
 
 ## 📂 Files Included
 
@@ -94,14 +94,14 @@ print(response.choices[0].message.content)
 - `student_data.csv` – Sample structured input data  
 - `README.md` – Project documentation  
 
--
+---
 
 ## 🔗 Related Projects
 
 - [COMLEX Question Generator](https://github.com/danabr21285/comlex-question-generator)  
 - [FIRE Program Clustering](https://github.com/danabr21285/fire-program-clustering)  
 
--
+---
 
 ## 👩‍🏫 Author
 
