@@ -110,3 +110,5 @@ print(response.choices[0].message.content)
 Executive Director of Admissions  
 📧 danatallent@yahoo.com  
 🔗 [LinkedIn](https://linkedin.com/in/dana-tallent-brooks-a15977a0)
+
+---
