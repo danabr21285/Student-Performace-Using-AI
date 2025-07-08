@@ -76,6 +76,7 @@ Please analyze the following student performance data:
 
 print(response.choices[0].message.content)
 
+---
 
 ## 📌 Sample Insights (AI-Generated)
 
@@ -89,7 +90,8 @@ print(response.choices[0].message.content)
 
 ## 📂 Files Included
 
-- `performance_analysis_gpt4.py` – Jupyter Notebook   
+- `performance_analysis_gpt4.py` – Jupyter Notebook
+  
 ---
 
 ## 🔗 Related Projects
