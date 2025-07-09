@@ -75,7 +75,7 @@ Please analyze the following student performance data:
 )
 
 print(response.choices[0].message.content)
-'''
+```
 ---
 
 ## 📌 Sample Insights (AI-Generated)
