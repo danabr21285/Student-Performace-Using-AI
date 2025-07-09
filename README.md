@@ -91,8 +91,7 @@ print(response.choices[0].message.content)
 ## 📂 Files Included
 
 - `performance_analysis_gpt4.py` – Jupyter Notebook or Python Script  
-- `student_data.csv` – Sample structured input data  
-- `README.md` – Project documentation  
+  
 
 ---
 
