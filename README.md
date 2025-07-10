@@ -20,7 +20,7 @@ This project uses OpenAI's GPT-4 to analyze academic performance patterns, board
 
 - `COMSAE`: Practice board exam score (numeric)  
 - `COMLEX`: Official board exam result (`P` = Pass, `F` = Fail)  
-- `DOxxx`: Course grades (e.g., `CRXX`, `CRXX2`) on a 0–100 scale  
+- `CRXX`: Course grades (e.g., `CRXX`, `CRXX2`) on a 0–100 scale  
 - `TotalYear1 Grades` / `TotalYear3 Grades`: Average numeric grades per year  
 - `Year`: Expected graduation class (e.g., 2025)  
 - Demographics or other features as needed  
@@ -65,7 +65,7 @@ Please analyze the following student performance data:
 
 **Focus Areas:**
 1. COMSAE and COMLEX patterns
-2. TotalCYear 1 Grades and Y2 correlations
+2. TotalYear 1 Grades and Y2 correlations
 3. Logistic regression using COMLEX outcome
 4. Early warning signs
 5. Intervention suggestions
@@ -81,7 +81,7 @@ print(response.choices[0].message.content)
 ## 📌 Sample Insights (AI-Generated)
 
 - Students scoring < 75 on `TotalYear1 Grades` had a **3.2x higher odds** of COMLEX failure  
-- `DO139B` and `CRXX` course grades were **strong predictors** of COMLEX outcomes  
+- `CRXX2` and `CRXX` course grades were **strong predictors** of COMLEX outcomes  
 - A **logistic regression model** showed significant p-values (**p < 0.01**) for `TotalYear 1 Grades`  
 - Recommended **targeted tutoring** and **academic coaching** for students scoring < 72  
 - **COMSAE scores < 400** frequently preceded COMLEX failure  
